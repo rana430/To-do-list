@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To-Do-List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="list-body">
+        <h1>To-Do-List</h1>
+
+        <div class="input-body">
+          <input type="text" placeholder="Add Task" id="add-task"/>
+          <button id="add" onclick="addTask()" disabled >Add</button>
+        </div>
+        <div class="tasks">
+          <!-- <div class="task">
+                    <input type="checkbox" id="myCheckbox">
+                    <label for="myCheckbox"></label>
+                    <p>add me</p>
+                </div> -->
+          <ul id="list-container">
+            <li class="task">
+              <div>
+                <input type="checkbox" id="myCheckbox" class="checker"/>
+                <label for="myCheckbox"></label>
+                <p>add me</p>
+              </div>
+              <span class="delete-task"><i class="fa-solid fa-x fa-sm"></i></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
